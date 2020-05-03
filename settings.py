@@ -66,8 +66,8 @@ STATICFILES_FINDERS = (
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 )
 
-DEBUG_ADMIN_NAME = "test_admin"
-DEBUG_ADMIN_PASSWORD = "test_password"
+DEBUG_ADMIN_NAME = "admin"
+DEBUG_ADMIN_PASSWORD = "password"
 
 STATICFILES_DIRS = [os.path.normpath(os.path.join(ROOT, "..", "survey", "static"))]
 
@@ -126,12 +126,6 @@ LOCALE_PATHS = (os.path.join(ROOT, "survey", "locale"),)
 LANGUAGE_CODE = "en"
 LANGUAGES = (
     ("en", "english"),
-    ("ru", "russian"),
-    ("es", "spanish"),
-    ("fr", "french"),
-    ("ja", "Japanese"),
-    ("zh", "Chinese"),
-    ("de", "German"),
 )
 
 LOGIN_REDIRECT_URL = "/"
